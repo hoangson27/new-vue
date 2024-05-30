@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/image">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Nguyễn Bá Hoàng Sơn</title>
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.7.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.7.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</head>
+<body>
+    <div id="main">
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
+                <div class="nav-logo">
+                    <a href="#">NBHSơn</a>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item nav-home"><a href="#banner">HOME</a></li>
+                    <li class="nav-item"><a href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a href="#service">SERVICES</a></li>
+                    <li class="nav-item"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li class="nav-item"><a href="#your-plan">PRICING</a></li>
+                    <li class="nav-item nav-blog">
+                        <a href="#your-blog">
+                            BLOG
+                            <i class="ti-angle-down"></i>
+                        </a>
+                        <ul class="nav-subnav">
+                            <li><a href="#">Blog Home</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-pages">
+                        <a href="#page">PAGES <i class="ti-angle-down"></i></a>
+                        <ul class="nav-subnav">
+                            <li><a href="#">Elements</a></li>
+                            <li>
+                                <a href="#">
+                                    Level 2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#footer">CONTACT</a></li>
+                </ul>
+            </div>
+           
+        </div>
+
+        <!-- Banner -->
+        <div id="banner">
+            <div class="container">
+                <div class="row align-item">
+                    <div class="col col-half banner-left">
+                        <h6>THIS IS ME</h6>
+                        <h1>Nguyễn Bá Hoàng Sơn</h1>
+                        <p>
+                            Mọi người sống một cuộc sống bị ràng buộc bởi những gì họ cho là đúng đắn và sự thật. Đó là cách họ định nghĩa ‘Thực tại’. Nhưng ‘đúng đắn’ hay ‘sự thật’ có nghĩa là gì? Chỉ là những khái niệm mơ hồ… ‘Thực tại’ của họ có thể chỉ là một ảo ảnh. Chung ta có thể coi họ chỉ đơn giản là đang sống trong thế giới của riêng họ, được định hình bởi niềm tin của họ không?- Uchiha Itachi
+                        </p>
+                        <a href="#" class="button">DISCOVER NOW</a>
+                    </div>
+                    <div class="col col-half banner-right">
+                        <img src="./assets/image/avt.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div id="about">
+            <div class="container">
+                <div class="row align-item">
+                    <div class="col col-half about-left">
+                        <img src="./assets/image/about.jpg" alt="">
+                    </div>
+
+                    <div class="col col-half about-right">
+                        <h6>ABOUT ME</h6>
+                        <h1>PERSONAL DEATAIL</h1>
+                        <p>Trở thành số một không hay ho như người ta tưởng. Khi hùng mạnh, con người dễ trở nên kiêu ngạo và lãnh đạm. Dù cho thứ họ đang tìm kiếm là giấc mơ của chính mình. </p>
+                        <a href="#" class="button">VIEW DETAIL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service -->
+        <div id="service">
+            <div class="container">
+                <div class="row align-item content-center">
+                    <div class="col col-10 service-titile">
+                        <h1>My Offered Services</h1>
+                        <p class="text">At About This Time Of Year, Some Months After New Year’s Resolutions Have Been Made And Kept, Or Made And Neglected.</p>
+                    </div>
+                </div>
+                <div class="row align-item">
+                    <div class="col col-three service-item">
+                        <i class="ti-palette" ></i>
+                        <a href="#" class="service-item-titile">Web Degin</a>
+                        <p class="text">"It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult."</p>
+                        
+                    </div>
+
+                    <div class="col col-three service-item">
+                        <i class="ti-desktop" ></i>
+                        <a href="#" class="service-item-titile">Web Development</a>
+                        <p class="text">"If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions."</p>
+                        
+                    </div>
+
+                    <div class="col col-three service-item">
+                        <i class="ti-camera" ></i>
+                        <a href="#" class="service-item-titile">Photography</a>
+                        <p class="text">"Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills."</p>
+                        
+                    </div>
+
+                    <div class="col col-three service-item">
+                        <i class="ti-image" ></i>
+                        <a href="#" class="service-item-titile">Clipping Path</a>
+                        <p class="text">"Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument."</p>
+                        
+                    </div>
+
+                    <div class="col col-three service-item">
+                        <i class="ti-mobile" ></i>
+                        <a href="#" class="service-item-titile">Apps Interface</a>
+                        <p class="text">"Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts."</p>
+                        
+                    </div>
+
+                    <div class="col col-three service-item">
+                        <i class="ti-rocket" ></i>
+                        <a href="#" class="service-item-titile">Graphic Design</a>
+                        <p class="text">"You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that."</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fact Home -->
+        <div id="fact-home">
+            <div class="container">
+                <div class="row align-item content-center">
+                    <div class="col col-four fact-home-item">
+                        <h1 class="fact-number">1234</h1>
+                        <p class="fact-content">Projects Completed</p>
+                    </div>
+
+                    <div class="col col-four fact-home-item">
+                        <h1 class="fact-number">123</h1>
+                        <p class="fact-content">Happy Clients</p>
+                    </div>
+
+                    <div class="col col-four fact-home-item">
+                        <h1 class="fact-number">157</h1>
+                        <p class="fact-content">Cups of Coffee</p>
+                    </div>
+
+                    <div class="col col-four fact-home-item">
+                        <h1 class="fact-number">12</h1>
+                        <p class="fact-content">Real Proesionals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <div class="row align-item content-center">
+                    <div class="col col-9">
+                        <div class="text-align titile-text">
+                            <h1>Our Latest Featured Projects</h1>
+                            <p class="text">Who Are In Extremely Love With Eco Friendly System.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-list">
+                        <ul>
+                            <li class="list-all">All</li>
+                            <li>Vector</li>
+                            <li>Raster</li>
+                            <li>UI/UX</li>
+                            <li>Printing</li>
+                        </ul>
+                    </div>
+
+                    <div class="col portfolio-content">
+                        <div class="col-three portfolio-single">
+                            <div class="portfolio-img">
+                                <img src="./assets/image/port-1.jpg" alt="">
+                                    <div class="portfolio-link">
+                                        <div class="portfolio-hidden">
+                                            <a href="#"><i class="ti-search"></i></a>
+                                            <p class="portfolio-link-text">Creative Design</p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="text-align portfolio-desc">
+                                    <h1>Computer</h1>
+                                    <p>Vector</p>
+                            </div>
+                             
+                        </div>
+
+                        <div class="col-three portfolio-single">
+                            <div class="portfolio-img">
+                                <img src="./assets/image/port-2.jpg" alt="">
+                             <div class="portfolio-link">
+                                 <div class="portfolio-hidden">
+                                    <a href="#"><i class="ti-search"></i></a>
+                                    <p class="portfolio-link-text">Creative Design</p>
+                                 </div>
+                             </div>
+                            </div>
+                            <div class="text-align portfolio-desc">
+                                <h1>Cyber</h1>
+                                <p>Vector</p>
+                            </div>
+                             
+                        </div>
+
+                        <div class="col-three portfolio-single">
+                            <div class="portfolio-img">
+                                <img src="./assets/image/port-3.jpg" alt="">
+                             <div class="portfolio-link">
+                                 <div class="portfolio-hidden">
+                                    <a href="#"><i class="ti-search"></i></a>
+                                    <p class="portfolio-link-text">Creative Design</p>
+                                 </div>
+                             </div>
+                             
+                            </div>
+                            <div class="text-align portfolio-desc">
+                                <h1>Road</h1>
+                                <p>Vector</p>
+                            </div>
+                             
+                        </div>
+
+                        <div class="col-three portfolio-single">
+                            <div class="portfolio-img">
+                                <img src="./assets/image/port-4.png" alt="">
+                             <div class="portfolio-link">
+                                 <div class="portfolio-hidden">
+                                    <a href="#"><i class="ti-search"></i></a>
+                                    <p class="portfolio-link-text">Creative Design</p>
+                                 </div>
+                             </div>
+                             
+                            </div>
+                            <div class="text-align portfolio-desc">
+                                <h1>Vacant Ground</h1>
+                                <p>Raster</p>
+                            </div>
+                             
+                        </div>
+
+                        <div class="col-three portfolio-single">
+                            <div class="portfolio-img">
+                                <img src="./assets/image/port-5.jpg" alt="">
+                             <div class="portfolio-link">
+                                 <div class="portfolio-hidden">
+                                    <a href="#"><i class="ti-search"></i></a>
+                                    <p class="portfolio-link-text">Creative Design</p>
+                                 </div>
+                             </div>
+                             
+                            </div>
+                            <div class="text-align portfolio-desc">
+                                <h1>Zoro</h1>
+                                <p>UI/UX</p>
+                            </div>
+                             
+                        </div>
+
+                        <div class="col-three portfolio-single">
+                            <div class="portfolio-img">
+                                <img src="./assets/image/port-6.jpg" alt="">
+                             <div class="portfolio-link">
+                                 <div class="portfolio-hidden">
+                                    <a href="#"><i class="ti-search"></i></a>
+                                    <p class="portfolio-link-text">Creative Design</p>
+                                 </div>
+                             </div>
+                             
+                            </div>
+                            <div class="text-align portfolio-desc">
+                                <h1>Space</h1>
+                                <p>Printing</p>
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Your Plan -->
+        <div id="your-plan">
+            <div class="container">
+                <div class="row align-item content-center">
+                    <div class="col col-9">
+                        <div class="text-align titile-text">
+                            <h1>Choose Your Plan</h1>
+                            <p class="text">When Someone Does Something That They Know That They Shouldn’t Do, Did They.</p>
+
+                        </div>
+                    </div>
+                    <div class="col plan-content">
+                        <div class="col col-four text-align price-item">
+                            <div class="price-item-top">
+                                <h1>01</h1>
+                                <h2>Economy</h2>
+                                <p>For the individuals</p>
+                            </div>
+                            <div class="price-item-mid">
+                                <ul>
+                                    <li class="mid-item">Secure Online Transfer</li>
+                                    <li class="mid-item">Unlimited Styles for interface</li>
+                                    <li class="mid-item">Reliable Customer Service</li>
+                                </ul>
+                            </div>
+                            <div class="price-item-bottom">
+                                <h1>$199</h1>
+                                <a href="#" class="item-button">BUY NOW</a>
+                            </div>
+                        </div>
+    
+                        <div class="col col-four text-align price-item">
+                            <div class="price-item-top">
+                                <h1>01</h1>
+                                <h2>Economy</h2>
+                                <p>For the individuals</p>
+                            </div>
+                            <div class="price-item-mid">
+                                <ul>
+                                    <li class="mid-item">Secure Online Transfer</li>
+                                    <li class="mid-item">Unlimited Styles for interface</li>
+                                    <li class="mid-item">Reliable Customer Service</li>
+                                </ul>
+                            </div>
+                            <div class="price-item-bottom">
+                                <h1>$199</h1>
+                                <a href="#" class="item-button">BUY NOW</a>
+                            </div>
+                        </div>
+    
+                        <div class="col col-four text-align price-item">
+                            <div class="price-item-top">
+                                <h1>01</h1>
+                                <h2>Economy</h2>
+                                <p>For the individuals</p>
+                            </div>
+                            <div class="price-item-mid">
+                                <ul>
+                                    <li class="mid-item">Secure Online Transfer</li>
+                                    <li class="mid-item">Unlimited Styles for interface</li>
+                                    <li class="mid-item">Reliable Customer Service</li>
+                                </ul>
+                            </div>
+                            <div class="price-item-bottom">
+                                <h1>$199</h1>
+                                <a href="#" class="item-button">BUY NOW</a>
+                            </div>
+                        </div>
+    
+                        <div class="col col-four text-align price-item">
+                            <div class="price-item-top">
+                                <h1>01</h1>
+                                <h2>Economy</h2>
+                                <p>For the individuals</p>
+                            </div>
+                            <div class="price-item-mid">
+                                <ul>
+                                    <li class="mid-item">Secure Online Transfer</li>
+                                    <li class="mid-item">Unlimited Styles for interface</li>
+                                    <li class="mid-item">Reliable Customer Service</li>
+                                </ul>
+                            </div>
+                            <div class="price-item-bottom">
+                                <h1>$199</h1>
+                                <a href="#" class="item-button">BUY NOW</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                   
+            
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog -->
+        <div id="your-blog">
+            <div class="container">
+                <div class="row align-item content-center">
+                    <div class="col col-9">
+                        <div class="text-align titile-text">
+                            <h1>Latest Posts From Our Blog</h1>
+                            <p class="text">You May Be A Skillful, Effective Employer But If You Don’t Trust Your Personnel And The Opposite, Then The Chances Of Improving And Expanding The Business</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col blog-content">
+                        <div class="col col-three blog-item">
+                            <div class="blog-img">
+                                <img src="./assets/image/blog-1.jpg" alt="">
+                            </div>
+                            <div class="blog-mid">
+                                <div class="blog-mid-avt">
+                                    <img src="./assets/image/client-1.jpg" alt="">
+                                    <a href="#">
+                                        <span>Doflamingo</span>
+                                    </a>
+                                </div>
+                                <div class="blog-mid-react">
+                                      17th Dec  
+                                    <i class="ti-heart"></i>
+                                    <span>1k</span>
+                                    <i class="ti-thought"></i>
+                                    <span>998</span>
+                                </div>
+                                
+                            </div>
+                            <a href="#" class="blog-link"><h4>BREAK THROUGH SELF DOUBT AND FEAR </h4></a>
+                                <p class="text">Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.</p>
+                        </div>
+
+                        <div class="col col-three blog-item">
+                            <div class="blog-img">
+                                <img src="./assets/image/blog-2.jpg" alt="">
+                            </div>
+                            <div class="blog-mid">
+                                <div class="blog-mid-avt">
+                                    <img src="./assets/image/client-2.jpg" alt="">
+                                    <a href="#">
+                                        <span>Law</span>
+                                    </a>
+                                </div>
+                                <div class="blog-mid-react">
+                                      20th Dec  
+                                    <i class="ti-heart"></i>
+                                    <span>7k</span>
+                                    <i class="ti-thought"></i>
+                                    <span>6k3</span>
+                                </div>
+                                
+                            </div>
+                            <a href="#" class="blog-link"><h4>PORTABLE FASHION FOR YOUNG WOMEN</h4></a>
+                                <p class="text">You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving.</p>
+                        </div>
+
+                        <div class="col col-three blog-item">
+                            <div class="blog-img">
+                                <img src="./assets/image/blog-3.jpg" alt="">
+                            </div>
+                            <div class="blog-mid">
+                                <div class="blog-mid-avt">
+                                    <img src="./assets/image/client-3.jpg" alt="">
+                                    <a href="#">
+                                        <span>Shanks</span>
+                                    </a>
+                                </div>
+                                <div class="blog-mid-react">
+                                      27th Dec  
+                                    <i class="ti-heart"></i>
+                                    <span>9k</span>
+                                    <i class="ti-thought"></i>
+                                    <span>7k4</span>
+                                </div>
+                                
+                            </div>
+                            <a href="#" class="blog-link"><h4>DO DREAMS SERVE AS A PREMONITION </h4></a>
+                                <p class="text">So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work involved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pages -->
+        <div id="page">
+            <div class="container">
+                <div class="row align-item content-center">
+                    <div class="col col-five text-align page-item">
+                        <img src="./assets/image/pages-1.png" alt="">
+                    </div>
+                    <div class="col col-five text-align page-item">
+                        <img src="./assets/image/pages-2.png" alt="">
+                    </div>
+                    <div class="col col-five text-align page-item">
+                        <img src="./assets/image/pages-3.png" alt="">
+                    </div>
+                    <div class="col col-five text-align page-item">
+                        <img src="./assets/image/pages-4.png" alt="">
+                    </div>
+                    <div class="col col-five text-align page-item">
+                        <img src="./assets/image/pages-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-40 footer-item">
+                        <h4>About Me</h4>
+                        <p>We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</p>
+                        <p class="footer-item-text">
+                            
+                            <i class="ti-heart"></i>
+                            by
+                            <a href="#">NBHSơn</a>
+                        </p>
+                    </div>
+                    <div class="col col-40 footer-item footer-item-contact">
+                        <h4>
+                            Newsletter
+                        </h4>
+                        <p>Stay updated with our latest trends</p>
+                        <div class="footer-email">
+                            <form action="">
+                                <div class="form-send">
+                                    
+                                    <input type="email" placeholder="Enter Email Address" name="Email" class="email-text">
+                                    <div class="email-send-button">SEND</div>
+                                </div>
+                            </form>
+                        </div>
+                    
+                    </div>
+                    <div class="col col-five footer-item footer-social">
+                        <h4>Follow Me</h4>
+                        <p>Let us be social</p>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
+                            <a href="https://twitter.com/?lang=vi"><i class="ti-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+                            <a href="https://www.youtube.com/"><i class="ti-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
+    </div>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const loadEl = document.querySelector('#load');
+          // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+          // // The Firebase SDK is initialized and available here!
+          //
+          // firebase.auth().onAuthStateChanged(user => { });
+          // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+          // firebase.firestore().doc('/foo/bar').get().then(() => { });
+          // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+          // firebase.messaging().requestPermission().then(() => { });
+          // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+          // firebase.analytics(); // call to activate
+          // firebase.analytics().logEvent('tutorial_completed');
+          // firebase.performance(); // call to activate
+          //
+          // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  
+          try {
+            let app = firebase.app();
+            let features = [
+              'auth', 
+              'database', 
+              'firestore',
+              'functions',
+              'messaging', 
+              'storage', 
+              'analytics', 
+              'remoteConfig',
+              'performance',
+            ].filter(feature => typeof app[feature] === 'function');
+            loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+          } catch (e) {
+            console.error(e);
+            loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+          }
+        });
+      </script>
+</body>
+</html>
